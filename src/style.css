@@ -67,15 +67,24 @@ body {
     border-radius: 10px;
     float: right;
     display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 
 .box {
-    width: 230px;
-    height: 375px;
+    width: 120vh;
+    height: 60vh;
     padding-left: 10px;
     border-radius: 10px;
     float: center;
     margin: auto;
     margin-top: 25vh;
     background-color: rgb(19, 20, 20);
+    position: absolute;
+    transform: translateX(25%);
+}
+
+.tab {
+    
 }
