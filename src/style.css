@@ -17,6 +17,7 @@
     text-align: center;
     color: white;
     margin-top: 25vh;
+    position: relative;
 }
 
 .loginBox h1 {
@@ -40,6 +41,17 @@
     border-radius: 5px;
     border: 1px solid #000000;
     padding: 5px;
+}
+
+#signUp {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 5px;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 15px;;
 }
 
 .invalidLogin {
@@ -73,18 +85,81 @@ body {
 }
 
 .box {
-    width: 120vh;
-    height: 60vh;
+    width: 60%;
+    height: 50%;
+    min-width: 300px;
+    min-height: 300px;
     padding-left: 10px;
     border-radius: 10px;
     float: center;
     margin: auto;
     margin-top: 25vh;
     background-color: rgb(19, 20, 20);
-    position: absolute;
-    transform: translateX(25%);
+    position: fixed;
+    transform: translateX(30%);
 }
 
 .tab {
+    color: white;
+    overflow: hidden;
+    float: left;
+}
+
+.tab button {
+    background-color: rgb(47, 51, 54);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius: 10px;
+    margin: 0;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
     
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(47, 51, 54);
+    text-align: center;
+    margin: auto;
+    margin-left: 40%;
+    width: 0;
+    margin-top: 10%;
+}
+
+#trait-info {
+    background-color: rgb(61, 71, 78);
+    color: white;
+    width: 1200px;
+    height: 1000px;
+    padding-top: 10px;
+}
+
+#tabContent {
+    padding-top: -4000px;
+}
+
+#registerSubmit {
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    padding: 5px;
+    position: absolute;
+    bottom: 50px;
+    left: 45%;
+    font-size: 20px;
+}
+
+.tablinks {
+    color: white;   
 }

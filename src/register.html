@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src https://api.spacetraders.io">
+    <title>Space Traders</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="loginBox">
+        <h1>Register</h1>
+        <label>Enter your call sign: <input type="symbol" name="symbol" id="symbol" placeholder="Insert Call Sign Here">
+        </label> <br/>
+        <label>Choose your starting faction: 
+            <select id="faction">
+            <option value="COSMIC" selected>COSMIC</option>
+            <option value="VOID">VOID</option>
+            <option value="GALACTIC">GALACTIC</option>
+            <option value="QUANTUM">QUANTUM</option>
+            <option value="DOMINION">DOMINION</option>
+        </select></label>
+        <button id="registerSubmit">Register</button> <br/>
+        <label>Remember me <input type="checkbox" id="remember"></button></label>
+       </div>
+    <script type="module" src="register.js"></script>
+  </body>

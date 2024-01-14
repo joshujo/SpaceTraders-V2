@@ -34,6 +34,7 @@ function logIn() {
                 localStorage.setItem('token', token);
                 window.location.href = './homePage.html';
                 localStorage.setItem('remember', 'true');
+                sessionStorage.setItem('token', token);
             } else {
                 sessionStorage.setItem('token', token);
                 localStorage.removeItem('token');
@@ -49,3 +50,9 @@ function logIn() {
 }
 
 document.getElementById('login').addEventListener('click', logIn);
+
+function register() {
+    window.location.href = './register.html';
+}
+
+document.getElementById('signUp').addEventListener('click', register);

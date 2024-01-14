@@ -9,9 +9,27 @@
   </head>
   <body>
 
-<div class="tab"></div>
+<div class="contentContainer">
+<div class="tab">
+  <button class="tablinks" id="Waypoints">Waypoints</button>
+</div>
 
-<div class="box"></div>
+<div id="trait-info">
+<label for="find-trait">Find trait: 
+  <select id="find-trait">
+      <option value="SHIPYARD">SHIPYARD</option>
+      <option value="MARKETPLACE">MARKETPLACE</option>
+      <option value="OUTPOST">OUTPOST</option>
+      <option value="TRADING_HUB">TRADING_HUB</option>
+      <option value="PIRATE_BASE">PIRATE_BASE</option>
+      <option value="MINERAL_DEPOSITS">MINERAL_DEPOSITS</option>
+  </select>
+  </label> <br/>
+  <label for="system">System: <input id="system"></label> <br/>
+  <button id="find-trait-button">Search</button>
+  </div>
+
+</div>
 
     <div class="logOut">
         <button class="logOut" id="logOut">Log out</button>
