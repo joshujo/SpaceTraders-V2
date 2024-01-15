@@ -15,3 +15,4 @@ function FindTrait() {
 }
 
 findTraitButton.addEventListener('click', FindTrait);
+

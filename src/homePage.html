@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src https://api.spacetraders.io">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; connect-src https://api.spacetraders.io; style-src 'self' 'unsafe-inline'">
     <title>Space Traders</title>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -15,6 +15,7 @@
 </div>
 
 <div id="trait-info">
+  <div class="traitBox">
 <label for="find-trait">Find trait: 
   <select id="find-trait">
       <option value="SHIPYARD">SHIPYARD</option>
@@ -27,6 +28,8 @@
   </label> <br/>
   <label for="system">System: <input id="system"></label> <br/>
   <button id="find-trait-button">Search</button>
+  </div>
+  <div id="traitInfoResults"></div>
   </div>
 
 </div>
